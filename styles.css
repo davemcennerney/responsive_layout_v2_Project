@@ -1,0 +1,288 @@
+    /***************
+Global CSS
+***************/
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #f9fafa;
+    color: #7b8b8e;
+    font-family: 'Raleway', sans-serif;
+}
+
+body h1 {
+    color: #384047;
+    font-weight: 600;
+}
+
+
+/***************
+Header and Nav Styles.
+***************/
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.4em;
+}
+
+.main_nav a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #384047;
+    font-size: .9em;
+}
+
+.main_nav a:hover {
+    color: white;
+    background-color: black;
+    transition: .7s;
+}
+
+.main_nav li {
+    list-style: none;
+    width: 90%;
+    background-color: white;
+    margin: 5px auto;
+    margin-top: 0;
+}
+
+.main_nav ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.profile {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.profile img {
+    width: 70%;
+}
+
+.profile p {
+    padding: 10px 30px;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+
+/***************
+Portfolio Styles.
+***************/
+
+#portfolio {
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#portfolio article {
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#portfolio h1 {
+    font-size: .9em;
+    margin-bottom: 30px;
+}
+
+#portfolio h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+#portfolio p {
+    font-weight: 300;
+    padding: 5% 10%;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+
+/***************
+Contact styles.
+***************/
+
+#contact {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.4em;
+    padding: 5% 10%
+}
+
+#contact h1 {
+    font-size: .9em
+}
+
+#contact p {
+    display: inline-block;
+}
+
+.info {
+    margin-right: 15px;
+}
+
+
+/***************
+Footer.
+***************/
+
+footer {
+    width: 90%;
+    margin-left: 5%;
+    border-top: 1px solid lightgrey;
+    height: 75px;
+}
+
+.footer_nav {
+    display: none;
+}
+
+footer ul {
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+footer li {
+    list-style: none;
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+footer a {
+    text-decoration: none;
+    color: #384047;
+    font-weight: 700;
+    font-size: .9em;
+    display: block;
+}
+
+.to_top {
+    text-align: right;
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
+/***************
+Media Queries.
+***************/
+
+@media (min-width: 768px) {
+    header {
+        height: 390px;
+    }
+    .main_nav li {
+        display: inline-block;
+        width: 15%;
+        background-color: #f9fafa;
+    }
+    .profile img {
+        float: right;
+        width: 30%;
+        max-width: 220px;
+    }
+    .profile p {
+        padding-left: 0;
+        width: 70%;
+        margin-top: 40px;
+        text-align: left;
+    }
+    #portfolio article {
+        width: 44%;
+        max-width: 390px;
+        display: inline-block;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    #portfolio article p {
+        padding: 5% 5%;
+    }
+    .interested {
+        max-width: 80%;
+    }
+    .to_top {
+        display: none;
+    }
+    .footer_nav {
+        display: inline-block;
+        width: 10%;
+        float: right;
+        padding-left: 4px;
+        font-size: .8em;
+        text-align: center;
+    }
+    @media (min-width: 1024px) {
+        header {
+            max-width: 95%;
+            margin: 0 auto;
+        }
+        header h1 {
+            width: 45%;
+            margin: 0 5px;
+            text-align: left;
+            padding-left: 10px;
+            float: left;
+        }
+        .main_nav ul {
+            width: 40%;
+            display: inline-block;
+            margin-left: 125px;
+        }
+        .main_nav li {
+            width: 30%;
+            padding-top: 15px;
+        }
+        #portfolio {
+            width: 95%;
+        }
+        #portfolio h1 {
+            padding: 2%;
+        }
+        #portfolio article {
+            max-width: 30%;
+            min-height: 358.28px;
+        }
+        .interested {
+            width: 62%;
+        }
+    }
