@@ -104,11 +104,16 @@ Portfolio Styles.
     padding-top: 20px;
 }
 
-#portfolio article {
+#portfolio ul {
+    padding-left: 0;
+}
+
+#portfolio li {
     width: 90%;
     background-color: white;
     margin: 0 auto;
     text-align: center;
+    list-style: none   
 }
 
 #portfolio h1 {
@@ -227,16 +232,15 @@ Media Queries.
         margin-top: 40px;
         text-align: left;
     }
-    #portfolio article {
-        width: 44%;
-        max-width: 390px;
+    
+    
+    #portfolio li {
+        width: 46%;
+        float:left;
         display: inline-block;
-        margin-right: 1%;
-        margin-left: 1%;
+        margin: 0 2%;
     }
-    #portfolio article p {
-        padding: 5% 5%;
-    }
+   
     .interested {
         max-width: 80%;
     }
@@ -251,6 +255,7 @@ Media Queries.
         font-size: .8em;
         text-align: center;
     }
+}
     @media (min-width: 1024px) {
         header {
             max-width: 95%;
@@ -278,9 +283,9 @@ Media Queries.
         #portfolio h1 {
             padding: 2%;
         }
-        #portfolio article {
+        #portfolio li {
             max-width: 30%;
-            min-height: 358.28px;
+            margin: 0 1.65%;
         }
         .interested {
             width: 62%;
